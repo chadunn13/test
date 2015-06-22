@@ -9,6 +9,9 @@ import jasperpath
 
 class IO:
   
+  speechRec = none
+  speechRec_persona = none
+  
   def __init__(self, speaker, passive_stt_engine, active_stt_engine):
     self._logger = logging.getLogger(__name__)
     self.speaker = speaker
