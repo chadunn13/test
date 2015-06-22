@@ -20,5 +20,5 @@ class IO:
     self._audio = pyaudio.PyAudio()
     self._logger.info("Initialization of PyAudio completed.")
 
-    def __del__(self):
-        self._audio.terminate()
+  def __del__(self):
+    self._audio.terminate()
