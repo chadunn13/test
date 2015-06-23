@@ -13,11 +13,11 @@ def getDateToday():
   IO.say(date_say)
 
 def getTimeNow():
-  time_now = datetime.time.time()
+  time_now = datetime.datetime.now().time()
   hour_num = time_now.hour
   hour_say = 0
   am_pm_say = ""
-  
+
   if hour_num == 0:
     hour_say = 12
     am_pm_say = "AM"
@@ -28,8 +28,8 @@ def getTimeNow():
     hour_say = 12
     am_pm_say = "PM"
   else:
-    hour_say = str(hour_num - 12)
+    hour_say = hour_num - 12
     am_pm_say = "PM"
-    
-  minute_say = time_now.minutes
-  time_say = "The time is " + hour_say + " " + str(minute_say) + " " + am_pm_say
+
+  minute_say = time_now.minute
+  time_say = "The time is " + str(hour_say) + " " + str(minute_say) + " " + am_pm_say
