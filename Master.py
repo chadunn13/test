@@ -1,4 +1,5 @@
-name = ""
+class master:
+  name = ""
 
-def setName(new_name):
-  name = new_name
+  def setName(new_name):
+    name = new_name
