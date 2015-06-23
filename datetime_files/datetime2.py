@@ -1,6 +1,6 @@
 import datetime
-import master
-import IO
+#import master
+#import IO
 
 class DateTime2:
   def getDateToday():
@@ -10,9 +10,10 @@ class DateTime2:
     month_say = month_tuple[month_num]
     day_say = date_today.day
     year_say = date_today.year
-    date_say = "Today is " + month_say + " " + str(day_say) + ", " + str(year_say) + ", " + master.name
-    IO.say(date_say)
-
+    date_say = "Today is " + month_say + " " + str(day_say) + ", " + str(year_say) + ", Master"
+    #IO.say(date_say)
+    print(date_say)
+    
   def getTimeNow():
     time_now = datetime.datetime.now().time()
     hour_num = time_now.hour
@@ -33,4 +34,6 @@ class DateTime2:
       am_pm_say = "PM"
 
   minute_say = time_now.minute
-  time_say = "The time is " + str(hour_say) + " " + str(minute_say) + " " + am_pm_say + ", " + master.name
+  time_say = "The time is " + str(hour_say) + " " + str(minute_say) + " " + am_pm_say + ", Master"
+  #IO.say(time_say)
+  print(time_say)
