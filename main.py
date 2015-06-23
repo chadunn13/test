@@ -3,7 +3,7 @@ from datetime_files import datetimecommands
 from datetime_files import datetime2
 
 def main():
-  parseInput(input("give a command"))
+  parseInput(raw_input("give a command"))
 
 def parseInput(string_input):
   if string_input in DateTimeCommands.time_now_commands:
