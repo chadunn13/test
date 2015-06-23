@@ -1,9 +1,12 @@
 from io.py import IO
 from datetime_files.datetimecommands import DateTimeCommands
-from datetime_files.datetime import 
+from datetime_files.datetime2 import DateTime2
 
 class parser:
   
   def parseInput(string_input):
-    if string_input in DateTimeCommands.timenow_commands:
+    if string_input in DateTimeCommands.time_now_commands:
+      DateTime2.getTimeNow()
+    elif string_input in DateTimeCommands.date_today_commands:
+      DateTime2.getDateToday()
       
