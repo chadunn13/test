@@ -1,8 +1,8 @@
 import datetime
-Parser
+import parser
 
 def main():
-  Parser.parseInput(input("give a command"))
+  parser.parseInput(input("give a command"))
   
 if __name__ == "__main__":
   main()
