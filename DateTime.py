@@ -32,4 +32,4 @@ def getTimeNow():
     am_pm_say = "PM"
 
   minute_say = time_now.minute
-  time_say = "The time is " + str(hour_say) + " " + str(minute_say) + " " + am_pm_say
+  time_say = "The time is " + str(hour_say) + " " + str(minute_say) + " " + am_pm_say + ", " + master.name
