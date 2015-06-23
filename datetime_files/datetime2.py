@@ -2,7 +2,7 @@ import datetime
 #import master
 #import IO
 
-class DateTime2:
+class datetime2:
   def getDateToday():
     month_tuple = "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
     date_today = datetime.date.today()
@@ -33,7 +33,7 @@ class DateTime2:
       hour_say = hour_num - 12
       am_pm_say = "PM"
 
-  minute_say = time_now.minute
-  time_say = "The time is " + str(hour_say) + " " + str(minute_say) + " " + am_pm_say + ", Master"
-  #IO.say(time_say)
-  print(time_say)
+    minute_say = time_now.minute
+    time_say = "The time is " + str(hour_say) + " " + str(minute_say) + " " + am_pm_say + ", Master"
+    #IO.say(time_say)
+    print(time_say)
