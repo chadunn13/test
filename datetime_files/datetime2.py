@@ -17,23 +17,31 @@ def getDateToday():
 def getTimeNow():
     time_now = datetime.datetime.now().time()
     hour_num = time_now.hour
-    hour_say = 0
+    hour_say = ""
     am_pm_say = ""
 
     if hour_num == 0:
       hour_say = 12
       am_pm_say = "AM"
     elif hour_num < 12:
-      hour_say = hour_num
+      hour_say = str(hour_num)
       am_pm_say = "AM"
     elif hour_num == 12:
       hour_say = 12
       am_pm_say = "PM"
     else:
-      hour_say = hour_num - 12
+      hour_say = str(hour_num - 12)
       am_pm_say = "PM"
 
-    minute_say = time_now.minute
-    time_say = "The time is " + str(hour_say) + " " + str(minute_say) + " " + am_pm_say + ", Master"
+    minute_num = time_now.minute
+    minute_say = ""
+    
+    if minute_num == 0:
+        minute_say = "o clock"
+    elif minute_num < 10:
+        minute_say = "o " + str(minute_num)
+    else:
+        minute_say = str(minute_num)
+    time_say = "The time is " + hour_say + " " + minute_say + " " + am_pm_say + ", Master"
     #IO.say(time_say)
     print(time_say)
