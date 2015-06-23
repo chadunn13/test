@@ -1,8 +1,14 @@
 import datetime
-import parser
 
 def main():
-  parser.parseInput(input("give a command"))
+  parseInput(input("give a command"))
+
+def parseInput(string_input):
+  if string_input in DateTimeCommands.time_now_commands:
+    DateTime2.getTimeNow()
+  elif string_input in DateTimeCommands.date_today_commands:
+    DateTime2.getDateToday()
+
   
 if __name__ == "__main__":
   main()
