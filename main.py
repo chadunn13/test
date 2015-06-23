@@ -1,5 +1,5 @@
 import datetime
-from parser import Parser
+Parser
 
 def main():
   Parser.parseInput(input("give a command"))
