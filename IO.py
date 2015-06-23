@@ -5,7 +5,6 @@ import tempfile
 import wave
 import audioop
 import alteration
-import jasperpath
 
 class IO:
   
@@ -25,3 +24,6 @@ class IO:
 
   def __del__(self):
     self._audio.terminate()
+    
+  def say(string_say):
+    print(string_say)
