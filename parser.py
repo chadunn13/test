@@ -1,6 +1,6 @@
-from io.py import IO
-from datetime_files.datetimecommands import DateTimeCommands
-from datetime_files.datetime2 import DateTime2
+import IO
+import DateTimeCommands
+import DateTime2
 
 class Parser:
   
